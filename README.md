@@ -1,10 +1,10 @@
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) ![visitors](https://visitor-badge.glitch.me/badge?page_id=AlanTanner.pdfjs-hugo-module)
 # pdfjs-hugo-module 
-This is a fork of [hugo-embed-pdf-shortcode](https://github.com/anvithks/hugo-embed-pdf-shortcode) created by [Anvinth KS](https://github.com/anvithks) optimized for use as a Hugo Module. it uses the latest pre-built version of the PDF.js source code from [mozilla/pdfjs-dist]github.com/mozilla/pdfjs-dist.
+This is a fork of [hugo-embed-pdf-shortcode](https://github.com/anvithks/hugo-embed-pdf-shortcode) created by [Anvinth KS](https://github.com/anvithks) optimized for use as a Hugo Module. it uses the latest pre-built version of the PDF.js source code from [mozilla/pdfjs-dist](github.com/mozilla/pdfjs-dist).
 ---  
 # Table of Contents  
 
-* [Online Demo](https://hugo-embed-pdf.netlify.app/)
+* [Online Demo](https://polite-stone-0de443110.2.azurestaticapps.net/posts/pdfdemo/)
 * [Introduction](#introduction)
 * [Setup](#setup)  
 * [Usage](#usage)  
@@ -25,6 +25,8 @@ This is a [Hugo Shortcode](https://gohugo.io/extras/shortcodes/) developed for u
 [\[Back to Top\]](#table-of-contents)
 
 **Note:**  This shortcode is for use in Hugo based websites. It will not work anywhere else. 
+
+For beginners to Hugo Modules [click here](https://gohugo.io/hugo-modules/use-modules/) to read the offical documentation.
 
 Init your project as a hugo module if not already.
 
