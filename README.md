@@ -1,10 +1,10 @@
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) ![visitors](https://visitor-badge.glitch.me/badge?page_id=AlanTanner.pdfjs-hugo-module)
 # pdfjs-hugo-module 
-This is a fork of [hugo-embed-pdf-shortcode](https://github.com/anvithks/hugo-embed-pdf-shortcode) created by [Anvinth KS](https://github.com/anvithks) with pdf.js v3.3.122 and optimized for use as a Hugo Module.
+This is a fork of [hugo-embed-pdf-shortcode](https://github.com/anvithks/hugo-embed-pdf-shortcode) created by [Anvinth KS](https://github.com/anvithks) optimized for use as a Hugo Module. it uses the latest pre-built version of the PDF.js source code from [mozilla/pdfjs-dist](github.com/mozilla/pdfjs-dist).
 ---  
 # Table of Contents  
 
-* [Online Demo](https://hugo-embed-pdf.netlify.app/)
+* [Online Demo](https://polite-stone-0de443110.2.azurestaticapps.net/posts/pdfdemo/)
 * [Introduction](#introduction)
 * [Setup](#setup)  
 * [Usage](#usage)  
@@ -17,14 +17,12 @@ This is a fork of [hugo-embed-pdf-shortcode](https://github.com/anvithks/hugo-em
 ## Introduction  
 [\[Back to Top\]](#table-of-contents)
 
-This is a [Hugo Shortcode](https://gohugo.io/extras/shortcodes/) developed for use in [Hugo](https://gohugo.io/) based websites. This shortcode allows you to embed a PDF file in a page on your Hugo website. It is developed using the [PDF.js](https://mozilla.github.io/pdf.js/) library by Mozilla.
-
-![hugo-embed-pdf-shortcode cover](https://github.com/anvithks/hugo-embed-pdf-shortcode/blob/master/hugo-embed-pdf-cover.png)
+This is a [Hugo Shortcode](https://gohugo.io/extras/shortcodes/) inside of a [Hugo Module](https://gohugo.io/hugo-modules/) that uses the latest pre-built verion of PDF.js from Mozilla. This shortcode allows you to embed a PDF file in a page on your Hugo website. It is developed using the [PDF.js](https://mozilla.github.io/pdf.js/) library by Mozilla.
 
 ## Setup  
 [\[Back to Top\]](#table-of-contents)
 
-**Note:**  This shortcode is for use in Hugo based websites. It will not work anywhere else. 
+[click here](https://gohugo.io/hugo-modules/use-modules/) to read the offical documentation on using Hugo Modules.
 
 Init your project as a hugo module if not already.
 
@@ -32,12 +30,11 @@ Init your project as a hugo module if not already.
 hugo mod init <your_repo_url>
 ```
 
-Add this module to site config. The following is an example of yaml, and the same is true for toml and json.
+Add this module to your config. The following is an example of toml, and the same is true for yaml and json.
 
 ```
-module:
-  imports:
-  - path: github.com/AlanTanner/pdfjs-hugo-module
+[[module.imports]]
+    path = "github.com/AlanTanner/pdfjs-hugo-module"
 ```
 
 <br />
@@ -64,7 +61,7 @@ To render a selected page number
 
 To hide loading spinner
 ```
-{{< embed-pdf url="./path/to/pdf/file/example.pdf" hideLoader="true" >}}
+{{< embed-pdf url="<path>/example.pdf" hideLoader="true" >}}
 ```
 
 ### Parameters
@@ -75,7 +72,7 @@ To hide loading spinner
 
 <br />
 
-**Note:** Currently supports local file embed. If absolute URL from the remote server is provided, configure the CORS header on that server.
+== Currently supports local file embed. If absolute URL from the remote server is provided, configure the CORS header on that server. ==
 
 ## FAQ  
 [\[Back to Top\]](#table-of-contents)
