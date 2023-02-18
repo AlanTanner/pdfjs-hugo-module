@@ -1,6 +1,6 @@
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) ![visitors](https://visitor-badge.glitch.me/badge?page_id=AlanTanner.pdfjs-hugo-module)
 # pdfjs-hugo-module 
-This is a fork of [hugo-embed-pdf-shortcode](https://github.com/anvithks/hugo-embed-pdf-shortcode) created by [Anvinth KS](https://github.com/anvithks) with pdf.js v3.3.122 and optimized for use as a Hugo Module.
+This is a fork of [hugo-embed-pdf-shortcode](https://github.com/anvithks/hugo-embed-pdf-shortcode) created by [Anvinth KS](https://github.com/anvithks) optimized for use as a Hugo Module. it uses the latest pre-built version of the PDF.js source code from [mozilla/pdfjs-dist]github.com/mozilla/pdfjs-dist.
 ---  
 # Table of Contents  
 
@@ -32,12 +32,11 @@ Init your project as a hugo module if not already.
 hugo mod init <your_repo_url>
 ```
 
-Add this module to site config. The following is an example of yaml, and the same is true for toml and json.
+Add this module to site config. The following is an example of toml, and the same is true for yaml and json.
 
 ```
-module:
-  imports:
-  - path: github.com/AlanTanner/pdfjs-hugo-module
+[[module.imports]]
+    path = "github.com/AlanTanner/pdfjs-hugo-module"
 ```
 
 <br />
@@ -64,7 +63,7 @@ To render a selected page number
 
 To hide loading spinner
 ```
-{{< embed-pdf url="./path/to/pdf/file/example.pdf" hideLoader="true" >}}
+{{< embed-pdf url="<path>/example.pdf" hideLoader="true" >}}
 ```
 
 ### Parameters
