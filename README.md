@@ -17,16 +17,12 @@ This is a fork of [hugo-embed-pdf-shortcode](https://github.com/anvithks/hugo-em
 ## Introduction  
 [\[Back to Top\]](#table-of-contents)
 
-This is a [Hugo Shortcode](https://gohugo.io/extras/shortcodes/) developed for use in [Hugo](https://gohugo.io/) based websites. This shortcode allows you to embed a PDF file in a page on your Hugo website. It is developed using the [PDF.js](https://mozilla.github.io/pdf.js/) library by Mozilla.
-
-![hugo-embed-pdf-shortcode cover](https://github.com/anvithks/hugo-embed-pdf-shortcode/blob/master/hugo-embed-pdf-cover.png)
+This is a [Hugo Shortcode](https://gohugo.io/extras/shortcodes/) inside of a [Hugo Module](https://gohugo.io/hugo-modules/) that uses the latest pre-built verion of PDF.js. This shortcode allows you to embed a PDF file in a page on your Hugo website. It is developed using the [PDF.js](https://mozilla.github.io/pdf.js/) library by Mozilla.
 
 ## Setup  
 [\[Back to Top\]](#table-of-contents)
 
-**Note:**  This shortcode is for use in Hugo based websites. It will not work anywhere else. 
-
-For beginners to Hugo Modules [click here](https://gohugo.io/hugo-modules/use-modules/) to read the offical documentation.
+[click here](https://gohugo.io/hugo-modules/use-modules/) to read the offical documentation on using Hugo Modules.
 
 Init your project as a hugo module if not already.
 
@@ -34,7 +30,7 @@ Init your project as a hugo module if not already.
 hugo mod init <your_repo_url>
 ```
 
-Add this module to site config. The following is an example of toml, and the same is true for yaml and json.
+Add this module to your config. The following is an example of toml, and the same is true for yaml and json.
 
 ```
 [[module.imports]]
@@ -76,7 +72,7 @@ To hide loading spinner
 
 <br />
 
-**Note:** Currently supports local file embed. If absolute URL from the remote server is provided, configure the CORS header on that server.
+== Currently supports local file embed. If absolute URL from the remote server is provided, configure the CORS header on that server. ==
 
 ## FAQ  
 [\[Back to Top\]](#table-of-contents)
