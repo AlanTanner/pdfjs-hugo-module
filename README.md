@@ -17,7 +17,7 @@ This is a fork of [hugo-embed-pdf-shortcode](https://github.com/anvithks/hugo-em
 ## Introduction  
 [\[Back to Top\]](#table-of-contents)
 
-This is a [Hugo Shortcode](https://gohugo.io/extras/shortcodes/) inside of a [Hugo Module](https://gohugo.io/hugo-modules/) that uses the latest pre-built verion of PDF.js. This shortcode allows you to embed a PDF file in a page on your Hugo website. It is developed using the [PDF.js](https://mozilla.github.io/pdf.js/) library by Mozilla.
+This is a [Hugo Shortcode](https://gohugo.io/extras/shortcodes/) inside of a [Hugo Module](https://gohugo.io/hugo-modules/) that uses the latest pre-built verion of PDF.js from Mozilla. This shortcode allows you to embed a PDF file in a page on your Hugo website. It is developed using the [PDF.js](https://mozilla.github.io/pdf.js/) library by Mozilla.
 
 ## Setup  
 [\[Back to Top\]](#table-of-contents)
