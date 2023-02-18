@@ -10,6 +10,5 @@ module:
     mounts:
       - source: build
         target: static/js/pdfjs-dist/build
-    mounts:
       - source: web
         target: static/js/pdfjs-dist/web
